@@ -19,5 +19,4 @@ public class CustomMathPow {
 		}
 		return result;
 	}
-
 }

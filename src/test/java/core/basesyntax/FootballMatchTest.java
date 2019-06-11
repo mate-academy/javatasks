@@ -12,9 +12,9 @@ public class FootballMatchTest {
             for (int secondRealResult = 1; secondRealResult < 5; secondRealResult++) {
                 for (int firstBetResult = 1; firstBetResult < 5; firstBetResult++) {
                     for (int secondBetResult = 1; secondBetResult < 5; secondBetResult++) {
-                        int studentResult =
+                        int actualResult =
                                 footballMatch.matchResult(firstRealResult, secondRealResult, firstBetResult, secondBetResult);
-                        int correctResult
+                        int expectedResult
                                 = footballMatchResult(firstRealResult, secondRealResult, firstBetResult, secondBetResult);
 
 
@@ -22,7 +22,7 @@ public class FootballMatchTest {
                                 + firstRealResult + ", "
                                 + secondRealResult + ", "
                                 + firstBetResult + ", "
-                                + secondBetResult, studentResult, correctResult);
+                                + secondBetResult, actualResult, expectedResult);
                     }
                 }
             }
